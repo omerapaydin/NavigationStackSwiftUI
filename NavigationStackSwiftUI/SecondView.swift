@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct SecondView: View {
+    
+    let selectedDog : Dog
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(selectedDog.name)
     }
 }
 
 #Preview {
-    SecondView()
+    SecondView(selectedDog: Dog(name: "Omer"))
 }
